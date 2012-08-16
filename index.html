@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>FTPM - Font Package Manager</title>
+    <meta name="author" content="Helder Santana">
+    <meta name="keywords" content="webfonts,html5,google webfonts,package management,package manager,package,css,design,nodejs,ttf,woff,base64 font">
+    <link href="asset/css/ftpm.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="container">
+
+        <hgroup>
+            <h1>FTPM</h1>
+            <h2>font package manager</h2>
+        </hgroup>
+
+    </header>
+
+    <section class="container teaser">
+        <p class="sixteen columns">Ftpm is a Font manager helper built on top of <a href="http://www.google.com/webfonts/" target="_blank">Google Web Fonts</a> and <a href="http://nodejs.org/" target="_blank">Node.js</a>. To install you should have <a href="http://npmjs.org/" target="_blank">NPM</a> and run:<br /> <code>npm install -g ftpm</code> with <strong>Root</strong> privileges.</p>
+    </section>
+
+    <div class="setup-alternatives container">
+
+        <section class="three columns">
+
+            <h3>System font</h3>
+
+<pre>
+ftpm install “droid sans”
+
+ftpm uninstall magra
+
+ftpm local
+</pre>
+
+        </section>
+
+        <section class="three columns">
+
+            <h3>Webfont file</h3>
+
+<pre>
+ftpm web magra
+
+ftpm web “droid sans”
+</pre>
+
+        </section>
+
+        <section class="three columns">
+
+            <h3>CSS font</h3>
+
+<pre>
+ftpm css magra
+
+ftpm dataurl “droid sans”
+
+ftpm css -s
+</pre>
+
+        </section>
+
+    </div>
+
+    <footer class="container">
+        <address>© 2012 <a href="http://heldr.com" target="_blank">Helder Santana</a>. All rights reserved.</address>
+    </footer>
+
+<a href="http://github.com/heldr/ftpm" target="_blank"><img class="github_badge" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    background:
+                linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, 
+                linear-gradient(63deg, transparent 74%, #999 78%), 
+                linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+                #f9f9f9;
+    background-size: 16px 48px;
+}
+
+hgroup {
+    height: 180px;
+    padding: 25px 0;
+}
+
+header h1 , header h2, footer {
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Engagement';
+    font-size: 140px;
+    color: #09f;
+    text-shadow: 0px 6px 0px rgba(255, 255, 255, 1);
+}
+header h2, section {
+    font-family: 'Brawler';
+    font-size:30px;
+    color: #666;
+    padding-left: 12px;
+}
+
+.teaser {
+    background-color: #fff;
+    margin:5px auto 25px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.teaser p {
+    padding: 10px 10px 3px 10px;
+}
+.teaser p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+}
+.teaser p a, .teaser strong {
+    font-size: 15px;
+    font-weight: bold;
+    color:#000;
+}
+
+.setup-alternatives section {
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 2px 5px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    1px 2px 5px rgba(50, 50, 50, 0.5);
+    box-shadow:         1px 2px 5px rgba(50, 50, 50, 0.5);
+}
+
+section h3 {
+    color: #333;
+    font-size: 30px;
+}
+
+code , pre {
+    font-family: 'Monaco', 'Lucida Console';
+    font-size: 12px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+pre {
+    margin-top: 20px;
+    padding:20px;
+}
+
+code {
+    padding: 2px 5px;
+}
+
+address {
+    font-size:12px;
+    font-family: 'Lucida Grande', Arial, Verdana;
+    color: #666;
+    padding: 20px 0;
+}
+
+address a {
+    font-size: 13px;
+    color: #09f;
+}
+
+.github_badge {
+    position: absolute; top: 0; right: 0; border: 0;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "ftpm gh-page",
+  "description": "ftpm github page",
+  "author": "Helder Santana",
+  "license": "MIT",
+  "dependencies": {
+      "grunt": ">=0.3.0",
+      "grunt-css": "*"
+  }
+}
