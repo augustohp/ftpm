@@ -83,6 +83,10 @@ code {
     padding: 2px 5px;
 }
 
+.video {
+    margin-top: 15px;
+}
+
 address {
     font-size:12px;
     font-family: 'Lucida Grande', Arial, Verdana;
