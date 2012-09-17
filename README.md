@@ -75,10 +75,32 @@ $ ftpm datauri magra public/css
 If you have a single css file for everything, FTPM has options that show css font code
 
 ```CLI
-$ ftpm css magra -v #you can use --verbose
-$ ftpm datauri magra -v #once you have enough scrollback on your terminal :)
+$ ftpm css magra -v
+$ ftpm datauri magra --verbose #once you have enough scrollback on your terminal :)
 ```
 
+### Specifing a font character set
+
+Fonts can have sypport for many different character sets:
+
+```CLI
+$ ftpm css Philosopher -t Hello
+$ ftpm datauri Philosopher --text "FTPM - Font Package Manager"
+```
+
+For a complete list of available fonts and font subsets please see
+[Google Web Fonts](http://www.google.com/webfonts).
+
+### Optimizing your font requests
+
+Oftentimes, when you want to use a web font on your website or application, you know in advance which letters you'll need. This often occurs when you're using a web font in a logo or heading.
+
+```CLI
+$ ftpm css Philosopher -s latin
+$ ftpm css Philosopher -s latin,cyrillic
+```
+
+If you want, there is [more information](https://developers.google.com/webfonts/docs/getting_started#Optimizing_Requests).
 
 DEVELOPING
 ----------

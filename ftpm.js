@@ -13,6 +13,8 @@
 var ftpm = require('./lib/ftpm'),
     fontDriver = './lib/driver/',
     showContent = false,
+    optionText = false,
+    optionCharset = false,
     force = false;
 
 ftpm.on('exitMessage', function( log , msg ) {
@@ -111,18 +113,24 @@ ftpm.on('runDriver', function( driverName , action , fontName ) {
 ftpm.cli.version( ftpm.name )
     .usage('[action] [font name] [output] [options]')
     .option('-v, --verbose', 'Shows css font content for `ftpm css` and `ftpm datauri`')
-    .option('-f, --force', 'Force system font uninstall without message');
+    .option('-f, --force', 'Force system font uninstall without message')
+    .option('-s', '--subset <subset>', 'Fetches only a character set of a font')
+    .option('-t', '--text <text>', 'Fetches only the characters specified in "text" of the font');
 
 ftpm.cli.on('--help', function() {
     ftpm.emit( 'exitMessage' , ftpm.log.info , ftpm.help() );
 });
-
 ftpm.cli.on('verbose', function() {
     showContent = true;
 });
-
 ftpm.cli.on('force', function() {
     force = true;
+});
+ftpm.cli.on('subset', function(subset) {
+    optionCharset = subset;
+});
+ftpm.cli.on('text', function(text) {
+    optionText = text;
 });
 
 if( process.argv.length > 2 ) {
