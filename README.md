@@ -75,10 +75,10 @@ $ ftpm datauri magra public/css
 If you have a single css file for everything, FTPM has options that show css font code
 
 ```CLI
-$ ftpm css magra -s #you can use --show
-
-$ ftpm datauri magra -s #once you have enough scrollback on your terminal :)
+$ ftpm css magra -v #you can use --verbose
+$ ftpm datauri magra -v #once you have enough scrollback on your terminal :)
 ```
+
 
 DEVELOPING
 ----------

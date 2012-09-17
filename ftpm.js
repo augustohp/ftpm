@@ -110,14 +110,14 @@ ftpm.on('runDriver', function( driverName , action , fontName ) {
 // options
 ftpm.cli.version( ftpm.name )
     .usage('[action] [font name] [output] [options]')
-    .option('-s, --show', 'show css font content when "ftpm css" or "ftpm datauri"')
-    .option('-f, --force', 'force system font uninstall without message');
+    .option('-v, --verbose', 'Shows css font content for `ftpm css` and `ftpm datauri`')
+    .option('-f, --force', 'Force system font uninstall without message');
 
 ftpm.cli.on('--help', function() {
     ftpm.emit( 'exitMessage' , ftpm.log.info , ftpm.help() );
 });
 
-ftpm.cli.on('show', function() {
+ftpm.cli.on('verbose', function() {
     showContent = true;
 });
 
